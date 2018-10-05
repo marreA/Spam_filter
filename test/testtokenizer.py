@@ -1,7 +1,8 @@
 
 
 import unittest
-from tokenizer import Tokenizer
+from context import spam_filter
+from spam_filter.tokenizer import Tokenizer
 
 class TestTokenizer(unittest.TestCase):
     def setUp(self):

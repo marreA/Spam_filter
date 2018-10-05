@@ -3,7 +3,8 @@ import unittest
 import io
 import re
 from bs4 import BeautifulSoup
-from email_object import Email_Object
+from context import spam_filter
+from spam_filter.email_object import Email_Object
 
 class TestHTMLEmail(unittest.TestCase):
     def setUp(self):

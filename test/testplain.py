@@ -1,7 +1,8 @@
 import unittest
 import io
 import re
-from email_object import Email_Object
+from context import spam_filter
+from spam_filter.email_object import Email_Object
 
 class TestPlainTextEmailObject(unittest.TestCase):
     CLRF = "\n\n"
