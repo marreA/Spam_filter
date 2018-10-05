@@ -14,7 +14,7 @@ class TestHTMLEmail(unittest.TestCase):
     
     def test_parse_stores_inner_text_html(self):
         body = "\n\n".join(self.html.split("\n\n")[1:])
-        expected = BeautifulSoup(body, features = 'html5lib').text
+        expected = BeautifulSoup(body).text
         self.assertEqual(self.html_email.body(), expected)
     
     def test_stores_subject(self):

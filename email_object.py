@@ -17,7 +17,7 @@ class Email_Object:
         content_type = self.mail.get_content_type()
         body = self.mail.get_payload()
         if content_type == Email_Object.HTML:
-            return BeautifulSoup(body, features = 'html5lib').text
+            return BeautifulSoup(body).text
         elif content_type == Email_Object.PLAIN:
             return body
         else:
