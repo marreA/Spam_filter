@@ -1,4 +1,4 @@
 *.pyc
 .vscode/
 spam_filter.egg-info/
-.coverage
+
