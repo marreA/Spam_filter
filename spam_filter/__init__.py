@@ -1,2 +1,2 @@
-from email_object import Email_Object
-from tokenizer import Tokenizer
+from spam_filter.email_object import Email_Object
+from spam_filter.tokenizer import Tokenizer
